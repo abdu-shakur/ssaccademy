@@ -11,15 +11,15 @@
 }
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 2% 2%;
     justify-content: space-between;
     align-items: center;
 }
 
 nav h1 a{
-    color: rgb(223, 130, 130);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 200;
+    color: #004080;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;;
     text-decoration: none;
 }
 .navbar{
@@ -32,7 +32,8 @@ nav h1 a{
     padding: 8px 12px;
 }
 .navbar a{
-    color: red;
+    color: #009688;
+    font-family: 'Roboto';
     text-decoration: none;
 }
 .navbar{
@@ -47,7 +48,7 @@ nav h1 a{
     margin: auto;
     width: 0%;
     display: block;
-    background-color: blue;
+    background-color:  #333333;
     text-align: center;
     height: 2px;
     
@@ -67,6 +68,9 @@ nav h1 a{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+.aboutusimg{
+    padding-left: 10px;
+}
 .aboutustextbox {
     top: 50%;
     left: 50%;
@@ -78,8 +82,8 @@ nav h1 a{
 .button{
     display: inline-block;
     text-decoration: none;
-    color: black;
-    border: 1px solid red;
+    color: #008B8B;
+    border: 1px solid #004080;
     padding: 12px 30px;
     margin-top: 10px;
     background: transparent;
@@ -87,6 +91,7 @@ nav h1 a{
 }
 .header p{
     padding: 10px 0;
+    color: #333333;
 }
 .header::before {
     content: "";
@@ -98,20 +103,32 @@ nav h1 a{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
     z-index: -1;
 }
 .button:hover{
-    border: 1px solid blue;
-    background-color: rgb(117, 117, 179);
-    color: red;
+    border: 1px solid #004080;
+    background-color:#008B8B ;
+    color: #E6F7FF;
 }
 /*body*/
-body h2, body h1{
-    color: rgb(4, 4, 72);
+body{
+    background-color:  #E6F7FF ;
+}
+body h1, body h2{
+    font-size: 30px;
+}
+body h3, body h4, body h5{
+    font-size: 20px;
+}
+body h2, body h1, body h3, body h4, body h5{
+    color: #004080;
+    font-family: 'Open Sans';
 }
 p{
-    color: rgb(1, 1, 59);
+    color: #333333;
+    font-family: 'Montserrat';
+    font-size: 16px;
 }
 /*News and Updates section*/
 .newsupdate{
@@ -121,11 +138,14 @@ p{
     text-align: center;
 }
 .card{
-    background-color: rgb(33, 231, 234);
+    background-color: #F0F0F0;
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
     flex-basis: 33%;
+}
+.card h4{
+    color: #008B8B;
 }
 hr{
     margin: 20px 0;
@@ -145,11 +165,12 @@ hr{
     margin:  20px auto;
     border-radius: 5px;
     width: 80%;
-    background-color: aqua;
+    background-color:  #E0FFFF;
 }
 .evhead{
     font-size: small;
     font-weight: bold;
+    color: #333333;
     float: left;
 }
 .date{
@@ -168,42 +189,6 @@ hr{
     display: block;
     border-radius: 10px;
 }
-/*Why SSA*/
-/*.whyus{
-    text-align: center;
-    height:70vh;
-    padding: 10px;
-}
-.whyus i{
-     font-size: 30px;
-     color: blue;
-     padding-right: 7px;
-     display: block;
-}
-.why h4{
-    display: flex;
-}
-.row{
-    margin: auto;
-    padding: 30px;
-    width: 90%;
-}
-.why{
-    padding-right: 20px;
-    padding-bottom: 3%;
-}
-.why1{
-    float: left;
-    width: 50%;
-}
-.why2{
-    float: right;
-    width: 50%;
-}
-.row, h4{
-    padding: 10px;
-}*/
-/*review*/
 .review{
     background-color: rgb(214, 191, 235);
     padding: 10px;
@@ -213,16 +198,16 @@ hr{
     text-align: center;
 }
 .review .card{
-    background-color: blue;
+    background-color: #FFFFFF;
 }
-.review p{
-    color: rgb(219, 222, 224);
+.review h5{
+    color: #004080;
 }
 /*Footer*/
 footer{
     display: flex;
     color: white;
-    background-color: rgb(7, 5, 56);
+    background-color: #004080;
     align-items: center;
     justify-items: center;
     padding:20px;
@@ -238,10 +223,11 @@ footer li{
 }
 footer a{
     text-decoration: none;
-    color: cyan;
+    color: #25b7b7;
 }
 footer h3{
     font-size: x-large;
+    color: #FFFFFF;
     padding-bottom: 10px;
     font-weight: 200;
 }
@@ -268,17 +254,17 @@ footer h3{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
     z-index: -1;
 }
 /*School Overview and History*/
-.aboutusoverview{
-    padding: 20px;
+.aboutusover{
+    padding:0 20px;
     text-align: justify;
     display: flex;
 }
 .aboutusoverview h2{
-    padding: 10px;
+    padding:10px 20px;
 }
 .missionvision{
     padding: 10px;
