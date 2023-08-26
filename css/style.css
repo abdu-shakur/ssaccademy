@@ -162,7 +162,7 @@ hr{
 .event {
     padding: 20px;
     padding-bottom: 40px;
-    margin:  20px auto;
+    margin:  10px auto;
     border-radius: 5px;
     width: 80%;
     background-color:  #E0FFFF;
@@ -173,11 +173,25 @@ hr{
     color: #333333;
     float: left;
 }
+.flex{
+    display: flex;
+    float: right;
+}
 .date{
     font-size: x-small;
     color: rgb(136, 133, 133);
-    float: right;
 }
+.all svg{
+    margin: 0 20px;
+    display: inline;
+}
+.description{
+    display: none;
+}
+.description:target {
+  display: block;
+}
+
 /*Accademic sections*/
 .section{
     padding: 10px;
@@ -277,7 +291,7 @@ footer h3{
     display: flex;
 }
 .mission,.vision,.corevalue{
-    background-color: aqua;
+    background-color:  white;
     padding: 10px;
     margin: 3px;
     border-radius: 5px;
@@ -371,6 +385,54 @@ form .button{
     nav{
         display: none;
     }
+    /* Existing CSS above */
+
+/* Media Query for Small Screens */
+@media (max-width: 700px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .navbar li {
+      display: block;
+      padding: 8px 0;
+    }
+    
+    .menu-icon {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 10px auto;
+    }
+    
+    .menu {
+      display: none;
+    }
+    
+    input[type="checkbox"]:checked + .menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: #333;
+      top: 50px;
+      left: 0;
+    }
+    
+    .menu li {
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid #555;
+    }
+    
+    .menu a {
+      color: white;
+      font-size: 18px;
+    }
+  }
+  
+  /* Remaining existing CSS */
+  
     /*News and Updates section*/
     .cards{
         flex-direction: column;
